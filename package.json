@@ -1,0 +1,20 @@
+{
+  "name": "hunt",
+  "version": "1.0.0",
+  "description": "about current location",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajeshwari-Rudra/rr-client-hunt.git"
+  },
+  "author": "rajeshwari rudravaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rajeshwari-Rudra/rr-client-hunt/issues"
+  },
+  "homepage": "https://github.com/Rajeshwari-Rudra/rr-client-hunt#readme"
+}

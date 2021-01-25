@@ -1,0 +1,13 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000267;
+  }
+ 
+  article {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5vh;
+  }
+  article > div {
+    margin: 0.5em;
+  }
