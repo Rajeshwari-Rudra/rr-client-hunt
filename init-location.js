@@ -2,16 +2,16 @@
 export default [
     {
         Name: 'B.D. Owens Library One',
-        latitude: 25.9765,
-        longitude: -22.09867,
+        latitude: 40.3535922,
+        longitude: -94.888208,
         Notes: 'tower',
         Attachments: '',
         'Quest-Location': 'Library',
     },
     {
         Name: 'Stuent Union',
-        latitude: 35.989,
-        longitude: -100.090,
+        latitude: 40.3517465,
+        longitude: -94.8855096,
         Notes: 'tower',
         Attachments: '',
         'Quest-Location': 'Stuent Union',
@@ -28,8 +28,8 @@ export default [
 
     {
         Name: 'Colden Pond',
-        latitude: 123.9876,
-        longitude:-56.9876,
+        latitude: 40.3500419,
+        longitude:-94.8851095,
         Notes: 'Colden Hall',
         Attachments: '',
         'Quest-Location': 'Colden Pond',
