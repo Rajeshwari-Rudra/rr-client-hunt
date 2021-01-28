@@ -1,3 +1,9 @@
+/**
+ * main.js - the logic for our app
+ * Get the location
+ * @author Rajeshwari Rudravaram
+ */
+
 // first imports.......................
 import locationsArray from '../init-locations.js';
 
@@ -36,9 +42,9 @@ async function getLocation() {
 async function locationHandler() {
     let locText = await getLocation();
     currentlat = locText.coords.latitude;
-    document.getElementById("device-lat").innerHTML = "Your device-latitude: " + currentlat.toFixed(6);
+    document.getElementById("device-lat").innerHTML = "device-latitude: " + currentlat.toFixed(6);
     currentlon = locText.coords.longitude;
-    document.getElementById("device-long").innerHTML = "Your device longitude: " + currentlon.toFixed(6);
+    document.getElementById("device-long").innerHTML = "device-longitude: " + currentlon.toFixed(6);
 
     locationsArray.forEach(function (value) {
         if (isInside(value.Latitude, value.Longitude)) {
@@ -57,13 +63,13 @@ async function locationHandler() {
 }
 
 
-//checking if distance is in 30m range.
+//checking if distance is in 10m range.
 
 
 function isInside(questLat, questLon) {
     let distance = distanceBetweenLocations(questLat, questLon);
     console.log("distance: " + distance);
-    if (distance < 30) {
+    if (distance < 20) {
         return true;
     } else {
         return false;
