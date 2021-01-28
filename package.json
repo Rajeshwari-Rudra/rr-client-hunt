@@ -4,7 +4,7 @@
   "description": "about current location",
   "main": "index.html",
   "scripts": {
-    "start": "index.html",
+    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

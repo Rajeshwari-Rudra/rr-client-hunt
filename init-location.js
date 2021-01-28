@@ -34,4 +34,13 @@ export default [
         Attachments: '',
         'Quest-Location': 'Colden Pond',
     },
+
+    {
+        Name: 'Horizon Apartments',
+        latitude:40.35604751997744,
+        longitude: -94.88197695446095,
+        Notes : 'Horizon Apartments',
+        Attachments: '',
+        'Quest-Location': 'Horizon Apartments',
+    },
 ];
