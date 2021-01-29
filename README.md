@@ -11,6 +11,7 @@ Demo app for the current location
  navigator.geolocation.getCurrentPosition(success[, error[, [options]])
 ```
 - Where success, error and options are the parameters.
+* success and error are call back functions.
 ----------
 ## Speech Synthesis
 * The SpeechSynthesisUtterance is an interface of the Web Speech API represents a speech request. 
