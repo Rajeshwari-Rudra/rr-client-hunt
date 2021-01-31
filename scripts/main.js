@@ -1,10 +1,7 @@
-// Resource : http://www.movable-type.co.uk/scripts/latlong.html?from=48.86,-122.0992&to=48.8599,-122.1449 
-// Above link for calculating distance 
-
 
 import locationsArray from '../init-locations.js';
 
-// for location element we assigned location id.
+// for location element location id was assigned.
 let locationElement = document.getElementById("location");
 
 window.addEventListener('load', main);
@@ -15,12 +12,12 @@ function main() {
     console.log('Page is fully loaded');
 }
 
-// initializing the current position latitude and longitude and error to true
+// initializing the variables current position latitude and longitude and error to true
 let currentPositionLatitude;
 let currentPositionLongitude;
 let error = true;
 
-// collects current location
+// getter method for tracing the current location
 async function getLocation() {
     return new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject);
@@ -29,9 +26,9 @@ async function getLocation() {
     });
 }
 
-// gets current locations and compares the locations from init-locations.js
-// if error is true provides you're not 20 meters nearer to any place
-// if error is false won't show any thing
+// gets current locations and compares with the other locations from init-locations.js
+// if error is true it says as you're not in 20 meters range of any destination
+// if error is false doesn't show any thing
 async function locationHandler() {
     let locText = await getLocation();
     currentPositionLatitude = locText.coords.latitude;
@@ -49,7 +46,7 @@ async function locationHandler() {
     });
 
     if(error) {
-        let innerHTML = "You're not 20 meters nearer to any place.";
+        let innerHTML = "You're not in 20 meters range of any destination.";
         document.getElementById("error-message").innerHTML = innerHTML;
         let utterance = new SpeechSynthesisUtterance(innerHTML);
         speechSynthesis.speak(utterance);
@@ -58,7 +55,7 @@ async function locationHandler() {
     }
 }
 
-//Calculates distance and checks distance is below or above 20 meters
+//Calculates distance and checks weather the distance is below or above 20 meters
 function isInside(questLatitde, questLongitude) {
     let distance = distanceBetweenLocations(questLatitde, questLongitude);
     console.log("distance: " + distance);
